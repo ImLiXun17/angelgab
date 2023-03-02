@@ -1,0 +1,11 @@
+Space_invader: Practice 5-04
+After watching **Sessions Tutorials** answer the following:
+
+ question:What function do we use to start a session?
+ answer: The function to start a session is session_start(); This function initializes a new or existing session and makes session variables available to your PHP scripts.
+         Once you've called session_start(), you can use the $_SESSION superglobal to store and retrieve data between page requests.
+
+
+ question:Where are these session variables stored?
+ answer: These variables strored in server side The actual data stored in the session variables (i.e., the values you set using $_SESSION) is stored on the server side, associated with the session ID. By default, PHP stores session data in files in a directory specified by the session.save_path configuration directive. 
+         However, you can also configure PHP to store session data in a database or in memory, depending on your needs.
