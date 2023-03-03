@@ -6,12 +6,10 @@
   
   if(isset($_POST['submit']))
   {
-    //if((isset($_POST['username']) && $_POST['username'] !='') && (isset($_POST['password']) && $_POST['password'] !=''))
-  //{
-    $un= $_POST['username'];
-    $pw= $_POST['password'];
+    $username= $_POST['username'];
+    $password= $_POST['password'];
 
-    $result= $conn->query("SELECT * FROM account WHERE username='$un' AND password='$pw'"); 
+    $result= $conn->query("SELECT * FROM account WHERE username='$username' AND password='$password'"); 
 
     $row= $result ->Fetch_array();
     $numRows= $result->num_rows;
